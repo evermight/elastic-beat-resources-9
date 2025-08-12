@@ -171,10 +171,10 @@ output.elasticsearch:
   protocol: "https"
 
   # Authentication credentials - either API key or username/password.
-  #api_key: "id:api_key"
+  api_key: "${ES_API_KEY}"
   #username: "elastic"
-  username: "filebeat_publisher"
-  password: "ABCD1234"
+  #username: "filebeat_user"
+  #password: "ABCD1234"
   ssl.certificate_authorities: ["/path/to/http_ca.crt"]
 
 setup.ilm.check_exists: false
