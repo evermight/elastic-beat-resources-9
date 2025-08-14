@@ -102,9 +102,9 @@ output.elasticsearch:
   protocol: "https"
 
   # Authentication credentials - either API key or username/password.
-  #api_key: "${ES_API_KEY}"
-  username: "metricbeat_user"
-  password: "ABCD1234"
+  api_key: "${ES_API_KEY}"
+  #username: "metricbeat_user"
+  #password: "ABCD1234"
 
   ssl.certificate_authorities: ["/etc/metricbeat/certs/http_ca.crt"]
 
